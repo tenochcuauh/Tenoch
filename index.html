@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto TENOCH</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      color: #003366;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0 0 25px rgba(0,0,0,0.15);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    header {
+      background: #0033A0;
+      padding: 40px 0;
+      text-align: center;
+      color: white;
+      position: relative; 
+    }
+
+    .logo-escuela {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 100px;
+      height: auto;
+      background-color: #ffffff55;
+      border: 4px solid #cfd8dc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    .logo {
+      width: 160px;
+      height: 160px;
+      background-color: #ffffff22;
+      border: 3px dashed #ffffff;
+      border-radius: 100px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-size: 1.2em;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #005BBF;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    main {
+      padding: 50px 40px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 70px;
+    }
+
+    h2 {
+      font-size: 2.4em;
+      color: #003366;
+      border-left: 8px solid #007A33;
+      padding-left: 15px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #003366;
+      font-size: 1.2em;
+      max-width: 850px;
+      margin: 0 auto;
+      line-height: 1.7em;
+    }
+
+    .button {
+      background-color: #007A33;
+      color: white;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #00A74A;
+    }
+
+    footer {
+      background-color: #0033A0;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 1.1em;
+    }
+
+    section { display: none; }
+    section.active { display: block; }
+
+    section { opacity: 0; transform: translateY(10px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    section.active { opacity: 1; transform: translateY(0); }
+
+    .btn-conocer {
+      padding: 12px 25px;
+      background: #006341;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn-conocer:hover { background: #004d33; transform: scale(1.05); }
+
+    .cronologia-item { margin: 20px 0; padding: 15px; border-left: 4px solid #006341; background: #f2f2f2; border-radius: 6px; }
+    .cronologia-item img { width: 100%; max-width: 500px; border-radius: 6px; margin-top: 10px; }
+
+    .pdf-container {
+      width: 100%;
+      height: 600px;
+      overflow: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    .pdf-download {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007A33;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .pdf-download:hover {
+      background-color: #004d33;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo-escuela">
+        <img src="LOGOT.jpg" alt="Logo Escuela" style="width:100%; height:auto; object-fit:contain; display:block;">
+      </div>
+        
+      <div class="logo">
+        <img src="LOGO.png" alt="Logo Escuela" style="width:100%; height:100%; object-fit:contain;">
+      </div>
+        
+      <h1>Proyecto TENOCH</h1>
+    </header>
+      
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Sobre el Proyecto</a>
+      <a href="#especificaciones">Especificaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+      <section id="inicio">
+        <h2>Bienvenidos</h2>
+        <p>Bienvenido a TENOCH, un proyecto de drone FPV diseñado para alto rendimiento, innovación y desarrollo tecnológico. Nuestro propósito es crear un dron estable, potente y construido con ingeniería de precisión.</p>
+
+        <!-- Video AUTO-->
+        <div style="margin-top: 25px;">
+          <video width="300" autoplay muted loop playsinline style= "border-radius:10px;">
+            <source src="Record.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+
+        <button class="button" onclick="mostrarSeccion('cronologia')">Conocer más</button>
+
+        <script>
+          function mostrarSeccion(id) {
+            document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+          }
+
+          document.addEventListener('DOMContentLoaded', () => {
+            mostrarSeccion('inicio');
+            document.querySelectorAll('nav a').forEach(enlace => {
+              enlace.addEventListener('click', e => {
+                e.preventDefault();
+                mostrarSeccion(enlace.getAttribute('href').substring(1));
+              });
+            });
+          });
+        </script>
+      </section>
+
+      <section id="nosotros">
+        <h2>Sobre el Proyecto</h2>
+        <p>TENOCH es un dron FPV ensamblado por el equipo Cuahucalli. Su diseño combina aerodinámica, electrónica optimizada y componentes de alto desempeño para lograr una experiencia de vuelo fluida, rápida y estable.</p>
+      </section>
+
+      <section id="especificaciones">
+        <h2>Especificaciones</h2>
+        <p>Frame de 5 pulgadas fabricado en fibra de carbono, controladora de vuelo F405, motores de 2300KV, sistema FPV de baja latencia en HD y electrónica configurada para un gran desempeño. Próximamente compartiremos el desglose completo.<br><br></p>
+        
+        <!-- Botón de descarga -->
+        <h3>Descargas</h3>
+        <a href="Especificaciones Tecnicas.pdf" download class="pdf-download">Especificaciones Tecnicas</a>
+        <a href="Manual de Usuario.pdf" download class="pdf-download">Manual de usuario</a>
+        <br><br>
+        <!-- PDF's con scroll -->
+        <h3>Manual de especificaciones técnicas</h3>
+        <div class="pdf-container">
+          <iframe src="Especificaciones Tecnicas.pdf" width="100%" height="100%" style="border:none;">
+          </iframe>
+        </div>
+        <br><br>
+        
+        <h3>Manual de usuario</h3>
+        <div class="pdf-container">
+          <iframe src="Manual de Usuario.pdf" width="100%" height="100%" style="border:none;">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p><!--Email: __________________<br><br><!-- -->
+           Teléfono: 9518989141 ó 2871384799<br><br>
+           Ubicación: Calzada Dr. Víctor Bravo Ahuja Num. 561, Col. Predio el Paraíso, <br>
+           C.P. 68350, San Juan Bautista Tuxtepec, Oaxaca
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 Cuahucalli. Todos los derechos reservados.
+    </footer>
+  </div>
+
+  <section id="cronologia">
+    <h2>Cronología del Proyecto TENOCH</h2>
+
+    <div class="cronologia-item">
+      <h3>Etapa 1 — Ensamble</h3>
+      <p style="text-align: justify;">En esta etapa se realizó el ensamble inicial del VANT, integrando los componentes estructurales principales, verificando la correcta alineación del chasis y asegurando que cada pieza quedara montada conforme al diseño original. Este proceso permitió preparar la plataforma para la instalación de la electrónica y los sistemas de control.</p>
+      <img src="e1.jpg" alt="1" style="display:block; margin:15px auto;">
+      <img src="e5.jpg" alt="2" style="display:block; margin:15px auto;">
+      <img src="e7.jpg" alt="3" style="display:block; margin:15px auto;">
+      <img src="e8.jpg" alt="4" style="display:block; margin:15px auto;">
+      <img src="e9.jpg" alt="5" style="display:block; margin:15px auto;">
+    </div>
+
+    <div class="cronologia-item">
+      <h3>Etapa 2 — Configuración</h3>
+      <p style="text-align: justify;">En esta etapa, se conectó el VANT a Betaflight para ajustar diferentes parámetros. Se revisó la orientación del modelo 3D, se calibró los sensores de movimiento, se asignaron los interruptores del control, también se configuró el GPS y los modos de vuelo. Estos ajustes garantizan que el dron responda correctamente antes de realizar cualquier prueba aérea.</p>
+      <img src="c1.jpg" alt="1" style="display:block; margin:15px auto;">
+      <img src="c2.jpg" alt="2" style="display:block; margin:15px auto;">
+      <video width="300" controls muted playsinline style="display:block; margin-left:auto; margin-right:auto; border-radius:10px;">
+        <source src="ETAPAS/c3.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+      <video width="300" controls muted playsinline style="display:block; margin-left:auto; margin-right:auto; border-radius:10px;">
+        <source src="c4.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </div>
+    
+    <div class="cronologia-item">
+      <h3>Etapa 3 — Pruebas</h3>
+      <p style="text-align: justify;">Con el dron ya ensamblado y configurado, se procedió a realizar las pruebas finales. Se realizaron vuelos controlados para evaluar su desempeño en el aire, activando el modo GPS Rescue para verificar que pudiera regresar al punto de despegue de forma autónoma. Asimismo, se probó el sistema de failsafe para asegurarnos de que el dron reaccionara correctamente ante la pérdida de señal, confirmando así la seguridad y fiabilidad de nuestro VANT.</p>
+      <img src="p1.jpg" alt="1" style="display:block; margin:15px auto;">
+      <img src="p2.jpg" alt="2" style="display:block; margin:15px auto;">
+      <video width="500" controls playsinline style="display:block; margin-left:auto; margin-right:auto; border-radius:10px;">
+        <source src="gps.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </div>
+    
+    <div class="cronologia-item justify-content:">
+      <h3 style= "text-align: center">Tomas adicionales</h3>
+      <img src="p3.jpg" alt="3" style="display: block; margin:15px auto;">
+      <img src="p4.jpg" alt="4" style="display: block; margin:15px auto;">
+    </div>
+
+  </section>
+
+</body>
+</html>
