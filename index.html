@@ -180,6 +180,102 @@
     .pdf-download:hover {
       background-color: #004d33;
     }
+    /* ----------- OPTIMIZACIÓN PARA CELULAR ----------- */
+@media (max-width: 768px) {
+
+  header {
+    padding: 25px 0;
+  }
+
+  .logo-escuela {
+    width: 70px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  main {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    border-left-width: 6px;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  video, iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .pdf-container {
+    height: 400px; /* más cómodo en móvil */
+  }
+
+  .cronologia-item img {
+    max-width: 100%;
+  }
+
+  .button, .pdf-download, .btn-conocer {
+    width: 90%;
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 15px 0;
+  }
+
+  .container {
+    box-shadow: none; /* mejor para móvil */
+    border-radius: 0;
+  }
+}
+
+/* Extra para pantallas muy pequeñas (menos de 450px) */
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-escuela {
+    width: 55px;
+  }
+
+  .pdf-container {
+    height: 300px;
+  }
+}
 
   </style>
 </head>
