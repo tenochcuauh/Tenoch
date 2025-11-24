@@ -111,10 +111,21 @@
       line-height: 1.7em;
     }
 
+    /* VIDEO RECORD fixed */
+    .record-video {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 15px auto;
+    }
+
+    /* IFRAME flipbook corregido */
     iframe {
       width: 100%;
-      height: 100%;       
-      pointer-events: auto; 
+      height: 100%;
+      pointer-events: auto;
+      border: none;
     }
 
     .button {
@@ -186,108 +197,97 @@
     .pdf-download:hover {
       background-color: #004d33;
     }
+
     /* ----------- OPTIMIZACIÓN PARA CELULAR ----------- */
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
 
-  header {
-    padding: 25px 0;
-  }
+      header {
+        padding: 25px 0;
+      }
 
-  .logo-escuela {
-    width: 70px;
-    top: 10px;
-    left: 10px;
-  }
+      .logo-escuela {
+        width: 70px;
+        top: 10px;
+        left: 10px;
+      }
 
-  .logo {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 15px;
-  }
+      .logo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+      }
 
-  header h1 {
-    font-size: 2em;
-  }
+      header h1 {
+        font-size: 2em;
+      }
 
-  nav {
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px 0;
-  }
+      nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 0;
+      }
 
-  nav a {
-    font-size: 1em;
-  }
+      nav a {
+        font-size: 1em;
+      }
 
-  main {
-    padding: 30px 20px;
-  }
+      main {
+        padding: 30px 20px;
+      }
 
-  h2 {
-    font-size: 1.8em;
-    border-left-width: 6px;
-  }
+      h2 {
+        font-size: 1.8em;
+        border-left-width: 6px;
+      }
 
-  p {
-    font-size: 1em;
-    padding: 0 10px;
-  }
+      p {
+        font-size: 1em;
+        padding: 0 10px;
+      }
 
-  video {
-    width: 100% !important;
-    height: auto !important;
-  }
+      .pdf-container {
+        height: 400px; 
+      }
 
-  iframe {
-  width: 100%;
-  height: 100%;       
-  pointer-events: auto; 
-}
+      .cronologia-item img {
+        max-width: 100%;
+      }
 
-  .pdf-container {
-    height: 400px; /* más cómodo en móvil */
-  }
+      .button, .pdf-download, .btn-conocer {
+        width: 90%;
+        font-size: 1em;
+        padding: 12px;
+      }
 
-  .cronologia-item img {
-    max-width: 100%;
-  }
+      footer {
+        font-size: 0.9em;
+        padding: 15px 0;
+      }
 
-  .button, .pdf-download, .btn-conocer {
-    width: 90%;
-    font-size: 1em;
-    padding: 12px;
-  }
+      .container {
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
 
-  footer {
-    font-size: 0.9em;
-    padding: 15px 0;
-  }
+    @media (max-width: 450px) {
+      header h1 {
+        font-size: 1.6em;
+      }
 
-  .container {
-    box-shadow: none; /* Para móvil */
-    border-radius: 0;
-  }
-}
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
 
-/* Para pantallas muy pequeñas */
-@media (max-width: 450px) {
-  header h1 {
-    font-size: 1.6em;
-  }
+      .logo-escuela {
+        width: 55px;
+      }
 
-  .logo {
-    width: 100px;
-    height: 100px;
-  }
-
-  .logo-escuela {
-    width: 55px;
-  }
-
-  .pdf-container {
-    height: 300px;
-  }
-}
+      .pdf-container {
+        height: 300px;
+      }
+    }
 
   </style>
 </head>
@@ -318,9 +318,9 @@
         <h2>Bienvenidos</h2>
         <p>Bienvenido a TENOCH, un proyecto de drone FPV enfocado en el alto rendimiento, la innovación y el desarrollo tecnológico. Nuestro propósito es ensamblar un dron estable, potente y construido con ingeniería de precisión.</p>
 
-        <!-- Video AUTO-->
+        <!-- VIDEO RECORD (corregido y responsivo) -->
         <div style="margin-top: 25px;">
-          <video width="300" autoplay muted loop playsinline style= "border-radius:10px;">
+          <video class="record-video" autoplay muted loop playsinline>
             <source src="Record.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción de video...
           </video>
@@ -360,24 +360,25 @@
         <a href="Especificaciones Tecnicas.pdf" download class="pdf-download">Especificaciones Tecnicas</a>
         <a href="Manual de Usuario.pdf" download class="pdf-download">Manual de usuario</a>
         <br><br>
-        <!-- PDF's con scroll -->
+
+        <!-- Flipbook 1 -->
         <h3>Manual de especificaciones técnicas</h3>
         <div class="pdf-container">
-          <iframe src="Tecnicas/tecnicas.html" width="100%" height="100%" style="border:none;">
-          </iframe>
+          <iframe src="Tecnicas/tecnicas.html"></iframe>
         </div>
+
         <br><br>
-        
+
+        <!-- Flipbook 2 -->
         <h3>Manual de usuario</h3>
         <div class="pdf-container">
-          <iframe src="Usuario/usuario.html" width="100%" height="100%" style="border:none;">
-          </iframe>
+          <iframe src="Usuario/usuario.html"></iframe>
         </div>
       </section>
 
       <section id="contacto">
         <h2>Contacto</h2>
-        <p><!--Email: __________________<br><br><!-- -->
+        <p>
            Teléfono: 9518989141 ó 2871384799<br><br>
            Ubicación: Calzada Dr. Víctor Bravo Ahuja Num. 561, Col. Predio el Paraíso, <br>
            C.P. 68350, San Juan Bautista Tuxtepec, Oaxaca
@@ -406,12 +407,15 @@
     <div class="cronologia-item">
       <h3>Etapa 2 — Configuración</h3>
       <p style="text-align: justify;">En esta etapa, se conectó el VANT a Betaflight para ajustar diferentes parámetros. Se revisó la orientación del modelo 3D, se calibró los sensores de movimiento, se asignaron los interruptores del control, también se configuró el GPS y los modos de vuelo. Estos ajustes garantizan que el dron responda correctamente antes de realizar cualquier prueba aérea.</p>
+
       <img src="c1.jpg" alt="1" style="display:block; margin:15px auto;">
       <img src="c2.jpg" alt="2" style="display:block; margin:15px auto;">
+
       <video width="300" controls muted playsinline style="display:block; margin-left:auto; margin-right:auto; border-radius:10px;">
         <source src="c3.mp4" type="video/mp4">
         Tu navegador no soporta la reproducción de video.
       </video>
+
       <video width="300" controls muted playsinline style="display:block; margin-left:auto; margin-right:auto; border-radius:10px;">
         <source src="c4.mp4" type="video/mp4">
         Tu navegador no soporta la reproducción de video.
@@ -421,16 +425,18 @@
     <div class="cronologia-item">
       <h3>Etapa 3 — Pruebas</h3>
       <p style="text-align: justify;">Con el dron ya ensamblado y configurado, se procedió a realizar las pruebas finales. Se realizaron vuelos controlados para evaluar su desempeño en el aire, activando el modo GPS Rescue para verificar que pudiera regresar al punto de despegue de forma autónoma. Asimismo, se probó el sistema de failsafe para asegurarnos de que el dron reaccionara correctamente ante la pérdida de señal, confirmando así la seguridad y fiabilidad de nuestro VANT.</p>
+
       <img src="p1.jpg" alt="1" style="display:block; margin:15px auto;">
       <img src="p2.jpg" alt="2" style="display:block; margin:15px auto;">
+
       <video width="500" controls playsinline style="display:block; margin-left:auto; margin-right:auto; border-radius:10px;">
         <source src="gps.mp4" type="video/mp4">
         Tu navegador no soporta la reproducción de video.
       </video>
     </div>
     
-    <div class="cronologia-item justify-content:">
-      <h3 style= "text-align: center">Tomas adicionales</h3>
+    <div class="cronologia-item">
+      <h3 style="text-align: center">Tomas adicionales</h3>
       <img src="p3.jpg" alt="3" style="display: block; margin:15px auto;">
       <img src="p4.jpg" alt="4" style="display: block; margin:15px auto;">
     </div>
