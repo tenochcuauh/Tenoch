@@ -111,10 +111,16 @@
       line-height: 1.7em;
     }
 
-    video, iframe {
+    video {
     width: 100% !important;
     height: 100% !important;
   }
+
+    iframe {
+  width: 100%;
+  height: 100%;       
+  pointer-events: auto; 
+    }
 
     .button {
       background-color: #007A33;
@@ -232,10 +238,16 @@
     padding: 0 10px;
   }
 
-  video, iframe {
+  video {
     width: 100% !important;
     height: auto !important;
   }
+
+  iframe {
+  width: 100%;
+  height: 100%;       
+  pointer-events: auto; 
+}
 
   .pdf-container {
     height: 400px; /* más cómodo en móvil */
@@ -355,7 +367,7 @@
         <br><br>
         <!-- PDF's con scroll -->
         <h3>Manual de especificaciones técnicas</h3>
-        <div class="pdf-container" style="pointer-events: auto;">
+        <div class="pdf-container">
           <iframe src="Tecnicas/tecnicas.html" width="100%" height="100%" style="border:none;">
           </iframe>
         </div>
