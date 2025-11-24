@@ -152,8 +152,22 @@
       font-size: 1.1em;
     }
 
-    section { display: none; }
-    section.active { display: block; }
+    section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+}
+
+section.active {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  transition-delay: 0s;
+}
 
     section { opacity: 0; transform: translateY(10px); transition: opacity 0.5s ease, transform 0.5s ease; }
     section.active { opacity: 1; transform: translateY(0); }
