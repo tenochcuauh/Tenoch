@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="18"><page Index="1"><![CDATA[]]></page><page Index="2"><![CDATA[]]></page><page Index="3"><![CDATA[Índice de contenido
+
+
+                                   Descripción del producto ............................................................................................. 1
+
+                                   Lista de componentes .................................................................................................. 2
+
+                                   Especificaciones técnicas de vuelo ............................................................................ 12]]></page><page Index="4"><![CDATA[Nombre del Prototipo: Tenoch
+
+                  Tipo: Vehículo Aéreo No Tripulado (VANT)
+
+                  El prototipo VANT "Tenoch" es un dron FPV de carreras de alto rendimiento, específicamente para competencias
+                  de innovación tecnológica. Su estructura liviana y aerodinámica le permite ejecutar maniobras precisas a gran
+                  velocidad, ideal para circuitos exigentes y entornos dinámicos.
+
+
+                   Aplicaciones Principales:
+
+                   •  Competencias de Drones FPV: Participación en circuitos de velocidad y precisión, destacando en eventos
+                       como Innobótica y otras ferias tecnológicas.
+                   •  Entrenamiento de Pilotos: Plataforma ideal para la práctica de maniobras avanzadas, simulación de
+                      vuelo en primera persona y desarrollo de habilidades de control.
+                   •  Demostraciones Tecnológicas: Exhibición de capacidades de vuelo, estabilidad y respuesta en presentaciones]]></page><page Index="5"><![CDATA[•  Material: fibra de carbono
+                   •  Configuración: cuadricóptero en forma “X”
+                   •  Componentes: placa base, placas superiores, 4 brazos
+                   •  Peso: 120 g
+                   •  Dimensiones: 220 mm (de motor a motor)]]></page><page Index="6"><![CDATA[Motores:
+
+                   •  Modelo: RS2205 2300KV sin escobillas
+
+                   •  Configuración: compatible con 3–4S
+                   •  Empuje máximo: 1024 g por motor
+
+                   •  Corriente máxima: 25 A
+
+                   •  Peso: 28 g por motor
+
+                   Hélices:
+
+                   •  Diámetro: 5 pulgadas (127 mm)
+
+                   •  Material: plástico PC/ABS
+
+                   •  Pitch: 4.3 pulgadas
+                   •  Tipo: gemelas (CW/CCW)]]></page><page Index="7"><![CDATA[Controlador de vuelo (FC):
+
+                   •  Modelo: F4 F405
+
+                   •  Procesador: STM32 F405
+
+                   •  Firmware: Betaflight
+
+                   •  Interfaces: 6× UART, 4× PWM
+
+                   •  Sensores: giroscopio MPU6000, acelerómetro
+
+                   •  Voltaje de entrada: 3–6S (9–25 V)
+                   •  Conectividad: USB Tipo-C
+
+
+                   Controlador electrónico de velocidad (ESC):
+
+                   •  Modelo: 4-en-1 BlHeli-S 60A
+
+                   •  Corriente continua: 60 A por ESC
+
+                   •  Voltaje de entrada: compatible con 3–6S
+
+                   •  Firmware: BlHeli-S]]></page><page Index="8"><![CDATA[Baterías (LiPo):
+
+                   •  Marca: Ovonic
+                   •  Capacidad: 2200 mAh
+
+                   •  Configuración: 4S1P / 14.8 V / 4 celdas
+
+                   •  Tasa de descarga: 120C
+
+                   •  Peso neto: 240 g
+
+                   •  Dimensiones: 107 mm de largo × 34 mm de ancho × 32 mm de alto
+
+                   •  Enchufe de descarga: XT60]]></page><page Index="9"><![CDATA[Cargador Imax B6 80W
+                   •  Modelo: Imax B6 80W
+
+                   •  Tipo: cargador/descargador digital
+
+                   •  Potencia máxima: 80 W
+
+                   •  Corriente de carga: 0.1–6.0 A
+
+                   •  Corriente de descarga: 0.1–1.0 A
+
+                   •  Voltaje de entrada: 11–18 V DC
+
+                   •  Precisión de medición: ±0.01 V
+
+
+
+
+                   Protecciones integradas:
+
+                   •  Polaridad inversa
+
+                   •  Sobrecalentamiento
+
+                   •  Sobrecorriente
+
+                   •  Cortocircuito
+                   •  Tiempo máximo de carga]]></page><page Index="10"><![CDATA[Baterías compatibles:
+
+                   •  LiPo / Li-ion / LiFe: 1–6 celdas (1S–6S)
+
+                   •  Voltaje LiPo: 3.7–22.2 V
+
+                   •  NiMH / NiCd: 1–15 celdas
+
+                   •  Pb (plomo-ácido): 2–20 V
+
+
+
+
+
+                  Funciones principales:
+
+                   •  Carga balanceada LiPo / Li-ion / LiFe
+
+                   •  Carga rápida NiMH / NiCd
+
+                   •  Modo almacenamiento (Storage)
+
+                   •  Análisis de capacidad
+
+                   •  Ciclo de carga/descarga]]></page><page Index="11"><![CDATA[Sistema de video Runcam WiFiLink 2: sistema de transmisión de video mediante conexión WiFi.
+
+                   Características principales:
+
+                   •  Transmisión: WiFi 5 GHz / 2.4 GHz
+
+                   •  Resolución máxima: 1080p a 60 fps
+
+                   •  Latencia: <80 ms en modo de baja latencia
+
+                   •  Alimentación: 5–36 V (compatible con baterías LiPo 2S–6S)
+
+                   •  Peso: ~15 g
+                  Componentes del sistema:
+
+                   •  Runcam WiFiLink 2
+
+                   •  Adaptador WiFi RTL8812AU
+
+                   •  Adaptador USB-C OTG]]></page><page Index="12"><![CDATA[Transmisor (TX):
+
+                   •  Modelo: FlySky FS-i6X
+
+                   •  Canales: 10
+                   •  Potencia de transmisión: 20 dBm
+
+                   •  Protocolo: AFHDS 2A
+
+                   •  Codificación: GFSK
+
+                   •  Interfaz: i-BUS
+
+                   •  Alimentación: 12 V DC
+
+                   •  Pantalla: LCD retroiluminado]]></page><page Index="13"><![CDATA[Receptor (RX):
+
+                   •  Modelo: FS-iA6B
+
+                   •  Canales: 6
+
+                   •  Sensibilidad: –105 dBm
+
+                   •  Interfaz: i-BUS / PPM
+                   •  Voltaje de operación: 4.0–6.5 V
+
+                   •  Consumo de corriente: 45 mA
+
+                   •  Dimensiones: 40.3 × 21.2 × 9.5 mm
+
+                   •  Peso: 7.5 g]]></page><page Index="14"><![CDATA[Módulo GPS:
+
+                   •  Modelo: HGLRC M100 Mini
+
+                   •  Chipset: u-blox M8N
+
+                   •  Frecuencia: L1 1575.42 MHz
+
+                   •  Antena: cerámica patch
+
+                   •  Sensibilidad: –167 dBm
+
+                   •  Tiempo de adquisición en frío: <26 s
+                   •  Tiempo de adquisición en caliente: <1 s
+
+                   •  Precisión de posición: 2.5 m
+
+                   •  Velocidad máxima: 500 m/s
+
+                   •  Frecuencia de actualización: 10 Hz
+
+                   •  Protocolos: NMEA, UBX
+
+                   •  Voltaje de operación: 3.0–5.5 V
+
+                   •  Consumo de corriente: 25 mA
+                   •  Dimensiones: 25 × 25 × 4 mm
+
+                   •  Peso: 5.5 g]]></page><page Index="15"><![CDATA[1. Desempeño de vuelo
+                   •  Autonomía: 15–22 minutos (dependiendo de las condiciones climáticas)
+
+                   •  Alcance máximo de control: 1000 m
+
+                   •  Alcance máximo de video: 100 m
+
+                   •  Velocidad máxima: 80 km/h
+
+                   •  Peso total: 480 g (sin batería), 690 g (con batería)
+
+                   •  Tiempo de ascenso: 4 s (de 0 a 50 m)
+
+                   •  Capacidad de carga útil: 200 g
+                   2. Modos de operación
+
+                   •  Manual / Acro: control total del piloto
+
+                   •  Angle: modo estabilizado asistido
+
+                   •  Horizon: modo semi-asistido para acrobacias
+
+                   •  GPS Rescue: retorno automático al punto de despegue
+
+                   •  Failsafe: activación automática de RTH por pérdida de señal (usada para pruebas)]]></page><page Index="16"><![CDATA[3. Precisiones de navegación
+
+                   •  Precisión RTH: ±3 m del punto de despegue
+
+                   •  Tiempo de adquisición GPS: <45 s
+
+                   •  Satélites mínimos para operación: 5
+
+                   4. Limitaciones operativas
+
+                   •  Temperatura operativa: 0 °C a 40 °C
+                   •  Velocidad máxima del viento: 25 km/h
+
+                   •  Humedad máxima: 80 %]]></page><page Index="17"><![CDATA[" La casa de las águilas"]]></page><page Index="18"><![CDATA[Conoce más acerca de este proyecto:]]></page></pages></Search>
